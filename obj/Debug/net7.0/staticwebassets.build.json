@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "vL8VM3hYtm/Iqp14HtzhTPjXrwvVH1Gb/4RERAyjpWY=",
+  "Source": "time-display",
+  "BasePath": "_content/time-display",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "time-display\\wwwroot",
+      "Source": "time-display",
+      "ContentRoot": "C:\\Users\\snela\\Desktop\\time-display\\wwwroot\\",
+      "BasePath": "_content/time-display",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\snela\\Desktop\\time-display\\wwwroot\\css\\styles.css",
+      "SourceId": "time-display",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\snela\\Desktop\\time-display\\wwwroot\\",
+      "BasePath": "_content/time-display",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/styles.css">
+    <title>Time Display</title>
+</head>
+@{
+    DateTime startTime = new DateTime(2022, 10, 20, 14, 32, 0); // Fecha de inicio
+    DateTime endTime = new DateTime(2023, 12, 25, 6, 0, 0); // Fecha de finalización
+    DateTime currentTime = DateTime.Now; // Fecha y hora actual
+
+    TimeSpan timeRemaining = endTime - currentTime;
+
+    string formattedStartTime = startTime.ToString("MMM dd, yyyy\nHH:mm");
+    string formattedEndTime = endTime.ToString("MMM dd, yyyy\nhh:mm tt");
+    string formattedRemainingTime = string.Format("{0} Day(s), {1} Hour(s), {2} Minute(s)",
+    timeRemaining.Days, timeRemaining.Hours, timeRemaining.Minutes);
+}
+
+<body>
+    <div class="container">
+        <div class="time">
+            <div class="start">
+                <p>Start Time</p>
+                <p>@formattedStartTime</p>
+            </div>
+            <div class="end">
+                <p>End Time</p>
+                <p>@formattedEndTime</p>
+            </div>
+        </div>
+        <div class="remaining">
+            <h1>Time Remaining</h1>
+            <p>@formattedRemainingTime</p>
+            <p>Remaining</p>
+        </div>
+    </div>
+</body>
+
+</html>
