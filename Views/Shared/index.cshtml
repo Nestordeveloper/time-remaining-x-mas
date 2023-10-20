@@ -8,13 +8,12 @@
     <title>Time Display</title>
 </head>
 @{
-    DateTime startTime = new DateTime(2022, 10, 20, 14, 32, 0); // Fecha de inicio
-    DateTime endTime = new DateTime(2023, 12, 25, 6, 0, 0); // Fecha de finalización
     DateTime currentTime = DateTime.Now; // Fecha y hora actual
+    DateTime endTime = new DateTime(2023, 12, 25, 6, 0, 0); // Fecha de finalización
 
     TimeSpan timeRemaining = endTime - currentTime;
 
-    string formattedStartTime = startTime.ToString("MMM dd, yyyy\nHH:mm");
+    string formattedStartTime = currentTime.ToString("MMM dd, yyyy\nHH:mm");
     string formattedEndTime = endTime.ToString("MMM dd, yyyy\nhh:mm tt");
     string formattedRemainingTime = string.Format("{0} Day(s), {1} Hour(s), {2} Minute(s)",
     timeRemaining.Days, timeRemaining.Hours, timeRemaining.Minutes);
